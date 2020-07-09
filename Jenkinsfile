@@ -8,6 +8,12 @@ pipeline {
         git 'https://github.com/AnandMehta14/Z1.git'
       }
     }
+   
+    stage('Msg') {
+      steps {
+        echo "Done"
+      }
+    }
  
  
  }
