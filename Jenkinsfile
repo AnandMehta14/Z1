@@ -8,7 +8,13 @@ pipeline {
         git 'https://github.com/AnandMehta14/Z1.git'
       }
     }
-   
+  
+    stage('Build') {
+      steps {
+        sh 'mvn -Dmaven.test.failure.ignore=true clean package'
+      }
+    } 
+  
     stage('Msg') {
       steps {
         echo "Done"
