@@ -20,7 +20,12 @@ pipeline {
         echo "Build_number:$BUILD_NUMBER"
       }
     }
- 
+   
+  stage('Docker Image') {
+      steps {
+        sh label: '', script: '''docker build -t jb-hello-world:$BUILD_NUMBER . '''
+      }
+    }
  
  }
 
