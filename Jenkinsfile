@@ -1,9 +1,9 @@
-Pipeline {
+pipeline {
  agent any
  
  stages {
     
-    stage('Build') {
+    stage('Git Clone') {
       step {
         git 'https://github.com/AnandMehta14/Z1.git'
       }
