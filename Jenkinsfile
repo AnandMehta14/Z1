@@ -4,7 +4,7 @@ pipeline {
  stages {
     
     stage('Git Clone') {
-      step {
+      steps {
         git 'https://github.com/AnandMehta14/Z1.git'
       }
     }
