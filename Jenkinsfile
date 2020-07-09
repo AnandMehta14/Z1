@@ -17,7 +17,7 @@ pipeline {
   
     stage('Msg') {
       steps {
-        echo "Done"
+        echo "Build_number:$BUILD_NUMBER"
       }
     }
  
