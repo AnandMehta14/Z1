@@ -21,11 +21,11 @@ pipeline {
       }
     }
    
- /* stage('Docker Image') {
+    stage('Docker Image') {
       steps {
         sh label: '', script: '''docker build -t jb-hello-world:$BUILD_NUMBER . '''
       }
-    } */
+    } 
  
  }
 
