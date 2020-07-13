@@ -25,6 +25,7 @@ pipeline {
       steps {
         sh label: '', script: '''docker build -t jb-hello-world:$BUILD_NUMBER .
                                  docker tag jb-hello-world:$BUILD_NUMBER mehta14/myproject1/jb-hello-world:$BUILD_NUMBER
+                                 docker login -u mehta14 -p DockerArm@14
                                  docker push mehta14/myproject1/jb-hello-world:$BUILD_NUMBER''' 
       }
     } 
