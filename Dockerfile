@@ -1,4 +1,4 @@
 FROM tomcat
 
 COPY . /usr/local/tomcat
-EXPOSE 8011
+//EXPOSE 8011
