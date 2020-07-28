@@ -1,6 +1,8 @@
 pipeline {
  agent any
  
+
+ 
  stages {
     
     stage('Git Clone') {
@@ -9,13 +11,13 @@ pipeline {
       }
     }
   
-    /* stage('Build') {
+     stage('Build') {
       steps {
         sh 'mvn -Dmaven.test.failure.ignore=true clean package'
       }
     } 
   
-    stage('Msg') {
+   /* stage('Msg') {
       steps {
         echo "Build_number:$BUILD_NUMBER"
       }
