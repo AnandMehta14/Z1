@@ -9,7 +9,7 @@ pipeline {
       }
     }
   
-    stage('Build') {
+    /* stage('Build') {
       steps {
         sh 'mvn -Dmaven.test.failure.ignore=true clean package'
       }
@@ -27,7 +27,7 @@ pipeline {
                                  docker tag jb-hello-world:$BUILD_NUMBER mehta14/jb-hello-world:$BUILD_NUMBER                               
                                  docker push mehta14/jb-hello-world:$BUILD_NUMBER''' 
       }
-    } 
+    } */
  
  }
 
